@@ -34,8 +34,8 @@ function App() {
                   selectedConfiguration: {
                     requires_session_auth: false, // creates public configuration which does not require session tokens
                     scheduler: { // callback URLs to be set in email confirmation messages
-                      rescheduling_url:`${window.location.origin}/reschedule/:booking_id`,
-                      cancellation_url:`${window.location.origin}/cancel/:booking_id`
+                      rescheduling_url:`${window.location.origin}/reschedule/:booking_ref`,
+                      cancellation_url:`${window.location.origin}/cancel/:booking_ref`
                     }
                   }
               }}
